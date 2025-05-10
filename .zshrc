@@ -103,11 +103,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# ==Prompt==
+#==Commands==
+neofetch
+echo "\n"
+echo 'Welcome back, Chris. Time to conquer.'
+
+#==Prompt==
 PROMPT='%F{green}%n@%m%f %F{blue}%~%f %# '
 RPROMPT=''
 
-# ==Normal Aliases==
+#==Normal Aliases==
 alias reload='source ~/.zshrc'
 alias cls='clear'
 alias desk='cd /mnt/c/Users/chris/OneDrive/Desktop'
@@ -116,7 +121,7 @@ alias zshrc='nano ~/.zshrc'
 alias cat='batcat'
 alias search='fzf'
 alias ls='eza -lh --color=always --group-directories-first'
-alias lsl='eza -lha --color=always --group-directories-first'
+alias ll='eza -lha --color=always --group-directories-first'
 
 #==Kali Aliases==
 alias ports='netstat -tulnp'
@@ -125,5 +130,5 @@ alias pythonserver='python3 -m http.server 80'
 
 #==Plugins==
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/fury/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
